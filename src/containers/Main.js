@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import './Main.css';
-import { StyleProvider, StylesContext } from '../contexts/StylesContext';
-import Header from "../components/header";
+import { StyleProvider } from '../contexts/StylesContext';
+import Header from "../components/header/header";
+import Greeting from "./greetings/Greetings";
+
 
 export default class Main extends Component {
     constructor(props) {
@@ -29,9 +31,9 @@ export default class Main extends Component {
         return (
             <div className={this.state.isDark ? "dark-mode" : null}>
                 <StyleProvider
-                 value = {{isDark: this.state.isDark, changeTheme: this.changeTheme}}
-                >
-                   <Header />
+                 value = {{isDark: this.state.isDark, changeTheme: this.changeTheme}}>
+                    <Header />
+                    <Greeting />
                 </StyleProvider>
             </div>
         )
