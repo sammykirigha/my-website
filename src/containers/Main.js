@@ -3,13 +3,19 @@ import './Main.css';
 import { StyleProvider } from '../contexts/StylesContext';
 import Header from "../components/header/header";
 import Greeting from "./greetings/Greetings";
+import Skills from "./skills/Skills";
+import StackProgress from "./skillProgress/skillProgress";
+import Education from "./education/Education";
+import Contact from "./contact/Contact";
+import Footer from "../components/footer/Footer"
+import Top from "./topbutton/Top";
 
 
 export default class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isDark: false
+            isDark: true
         }
     }
 
@@ -34,6 +40,12 @@ export default class Main extends Component {
                  value = {{isDark: this.state.isDark, changeTheme: this.changeTheme}}>
                     <Header />
                     <Greeting />
+                    <Skills />
+                    <StackProgress />
+                    <Education />
+                    <Contact />
+                    <Footer />
+                    <Top />
                 </StyleProvider>
             </div>
         )

@@ -24,8 +24,116 @@ const socialMediaLinks = {
     display: true 
 }
 
+//Skills Section
+
+const skillsSection = {
+    title: "What I do",
+    subTitle: "CRAZY FRONT-END DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+    skills: [
+        emoji(
+            "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
+        ),
+        emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+        emoji(
+            "⚡ Integration of third party services such as Firebase/ "
+        )
+    ],
+    softwareSkills: [
+        {
+            skillName: "html-5",
+            fontAwesomeClassname: "fab fa-html5"
+        }, {
+            skillName: "css3",
+            fontAwesomeClassname: "fab fa-css3-alt"
+        },
+        {
+            skillName: "sass",
+            fontAwesomeClassname: "fab fa-sass"
+        },
+        {
+            skillName: "JavaScript",
+            fontAwesomeClassname: "fab fa-js"
+        },
+        {
+            skillName: "reactjs",
+            fontAwesomeClassname: "fab fa-react"
+        },
+        {
+            skillName: "nodejs",
+            fontAwesomeClassname: "fab fa-node"
+        },
+        {
+            skillName: "npm",
+            fontAwesomeClassname: "fab fa-npm"
+        },
+        {
+            skillName: "psql-database",
+            fontAwesomeClassname: "fas fa-database"
+        },
+        {
+            skillName: "firebase",
+            fontAwesomeClassname: "fas fa-fire"
+        }
+    ],
+    display: true
+    
+};
+
+const techStack = {
+    viewSkillBars: true,
+    experience: [
+        {
+            Stack: "Frontend / Design",
+            progressPercentage: "90%"
+        },
+        {
+            Stack: "Backend",
+            progressPercentage: "50%"
+        },
+        {
+            Stack: "Programming",
+            progressPercentage: "60%"
+        }
+    ],
+    displayCodersrank: true
+};
+
+const educationInfo = {
+    display: true, // Set false to hide this section, defaults to true
+    schools: [
+        {
+            schoolName: "FreeCodeCamp",
+            logo: require("./assets/images/download.jpeg"),
+            subHeader: "Computer Science engineering course and data structures",
+            duration: "March 2020 - September 2020",
+            desc: "Learned basics skills which formed my foundation to understanding and building morden web application and a keen interest to learn new skills",
+        },
+        {
+            schoolName: "Karatina University",
+            logo: require("./assets/images/download (1).png"),
+            subHeader: "Bachelor of Science in Natural Resources Maanagement",
+            duration: "September 2016 - April 2020",
+            desc:
+                "Though with a different background I have loved this industry passionately which me to take several courses from Udemy and freecodecamp. I have also taken a course about Software Engineering, front-end & back-end courses, data structures and algorithms...",
+        }
+    ]
+};
+
+const contactInfo = {
+    title: emoji("Contact Me ☎️"),
+    subtitle:
+        "Do you want to connect or say hi? My Inbox is open for all.",
+    number: "+254707256013",
+    email_address: "dkirigha18@gmail.com"
+}
+
+
 export {
     illustration,
     greeting,
-    socialMediaLinks
+    socialMediaLinks,
+    skillsSection,
+    techStack,
+    educationInfo,
+    contactInfo
 };
