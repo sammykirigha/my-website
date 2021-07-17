@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Profiler } from "react";
 import './Main.css';
 import { StyleProvider } from '../contexts/StylesContext';
 import Header from "../components/header/header";
@@ -9,6 +9,7 @@ import Education from "./education/Education";
 import Contact from "./contact/Contact";
 import Footer from "../components/footer/Footer"
 import Top from "./topbutton/Top";
+import WorkExperience from "./workExperience/WorkExperience";
 
 
 export default class Main extends Component {
@@ -43,7 +44,9 @@ export default class Main extends Component {
                     <Skills />
                     <StackProgress />
                     <Education />
+                    <WorkExperience />
                     <Contact />
+                    <Profiler />
                     <Footer />
                     <Top />
                 </StyleProvider>

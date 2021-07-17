@@ -119,6 +119,32 @@ const educationInfo = {
     ]
 };
 
+const workExperience = {
+    display: true,
+    experience: [
+        {
+            role: "Intern ",
+            company: "Kenya Wildlife Service",
+            companylogo: require("./assets/images/kws.webp"),
+            date: "March 2019 - September 2019",
+            desc: "Taking part in environment and wildlife conservation initiatives",
+            descBullets: [
+                "Contributing to the collection of data from field, data entry, analysis and database management.",
+                "Participated in various meetings and training activities.",
+                "Managed work according to schedule and ensured compliance to the same.",
+                "Worked in the department of Research, doing assessment and monitoring the water quality of Lake Nakuru."
+            ]
+        }
+    ]
+};
+
+const openSource = {
+    githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
+    githubUserName: "sammykirigha",
+    showGithubProfile: "true",
+    display: true
+}
+
 const contactInfo = {
     title: emoji("Contact Me ☎️"),
     subtitle:
@@ -135,5 +161,7 @@ export {
     skillsSection,
     techStack,
     educationInfo,
-    contactInfo
+    contactInfo,
+    openSource,
+    workExperience
 };
